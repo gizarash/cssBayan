@@ -1,0 +1,11 @@
+.container {
+  margin: 0 auto;
+  width: 820px;
+}
+.accordion-section-body {
+  position: relative;
+}
+.accordion-section-image {
+  width: 100%;
+  height: auto;
+}
