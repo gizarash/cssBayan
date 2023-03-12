@@ -2,8 +2,36 @@
   margin: 0 auto;
   width: 820px;
 }
+.accordion-section input:checked + label + div {
+  max-height: 100%;
+  visibility: visible;
+}
+.accordion-section input:checked + label::after {
+  content: '\2716';
+}
+.accordion-section label {
+  display: block;
+  margin: 0;
+  padding: 20px 30px;
+  position: relative;
+  background-color: aquamarine;
+  cursor: pointer;
+  font-size: 30px;
+}
+.accordion-section label::after {
+  content: '\271A';
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  color: #000000;
+  font-size: 20px;
+}
 .accordion-section-body {
   position: relative;
+  visibility: hidden;
+  overflow: hidden;
+  max-height: 0;
 }
 .accordion-section-image {
   width: 100%;
