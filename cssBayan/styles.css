@@ -6,7 +6,7 @@
   max-height: 100%;
   visibility: visible;
 }
-.accordion-section input:checked + label::after {
+.accordion:hover .accordion-section input:checked + label::after {
   content: '\2716';
 }
 .accordion-section input {
@@ -22,7 +22,7 @@
   cursor: pointer;
   font-size: 30px;
 }
-.accordion-section label::after {
+.accordion:hover .accordion-section label::after {
   content: '\271A';
   position: absolute;
   top: 50%;
