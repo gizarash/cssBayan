@@ -6,6 +6,10 @@
   max-height: 100%;
   visibility: visible;
 }
+.accordion-section:hover div {
+  max-height: 100%;
+  visibility: visible;
+}
 .accordion:hover .accordion-section input:checked + label::after {
   content: '\2716';
 }
