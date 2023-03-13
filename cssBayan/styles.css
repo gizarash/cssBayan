@@ -1,0 +1,70 @@
+.container {
+  margin: 0 auto;
+  width: 820px;
+}
+.accordion-section input:checked + label + div {
+  max-height: 100%;
+  visibility: visible;
+}
+.accordion-section:hover div {
+  max-height: 100%;
+  visibility: visible;
+}
+.accordion:hover .accordion-section input:checked + label::after {
+  content: '\2716';
+}
+.accordion-section input {
+  display: none;
+}
+.accordion-section label {
+  display: block;
+  margin: 0;
+  padding: 1rem 2rem;
+  position: relative;
+  background-color: aquamarine;
+  border-top: 1px solid rgb(64, 182, 144);
+  cursor: pointer;
+  font-size: 2rem;
+}
+.accordion:hover .accordion-section label::after {
+  content: '\271A';
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  color: #000000;
+  font-size: 1.5rem;
+}
+.accordion-section-body {
+  position: relative;
+  visibility: hidden;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease;
+}
+.accordion-section-image {
+  width: 100%;
+  height: auto;
+}
+.accordion-section-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-size: 30px;
+  text-shadow: 2px 0 2px #000000, 
+              0 2px 2px #000000, 
+              -2px 0 2px #000000, 
+              0 -2px 2px #000000;
+}
+@media only screen and (max-width: 820px) {
+  .container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+  }
+}
